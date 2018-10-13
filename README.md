@@ -1,5 +1,5 @@
 # Oblique
-![Oblique-Logo](https://i.gyazo.com/938b9d62070e1c7353e1652d3b126ce4.png)
+![Oblique-Logo](https://i.gyazo.com/6c288423ba5d48c9f33cd07dbea99a5d.png)
 
 Introduction
 ---

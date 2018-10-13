@@ -26,7 +26,7 @@ public final class CommonMenuService implements MenuService {
 
         /* Register the listener and schedule the task */
         plugin.getServer().getPluginManager().registerEvents(listener, plugin);
-        plugin.getServer().getScheduler().runTaskTimer(plugin, task, 2L, 2L);
+        plugin.getServer().getScheduler().runTaskTimerAsynchronously(plugin, task, 2L, 2L);
     }
 
     @Override

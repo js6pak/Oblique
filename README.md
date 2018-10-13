@@ -30,7 +30,7 @@ mvn clean install
 Usage
 ---
 #### Examples
-* See [ExamplePlugin](https://github.com/cleodevelopment/oblique/blob/master/src/main/java/rip/cloe/oblique/example/ExamplePlugin.java)
+* See [ExamplePlugin](https://github.com/cleodevelopment/oblique/blob/master/src/main/java/rip/cleo/oblique/example/ExamplePlugin.java)
 ```java
     @Override
     public void onEnable() {

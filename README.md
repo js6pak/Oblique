@@ -6,13 +6,12 @@ Introduction
 > Oblique is a fast and reliable menu API.
 
 As a lightweight api, it should support almost all versions above 1.7.x on [Spigot](https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/browse).
-If you find any bugs, feel free to open an [Issue](https://github.com/cleodevelopment/oblique/issues) or a [Pull Request](https://github.com/cleodevelopment/oblique/pulls)
+If you find any bugs, feel free to open an [Issue](https://github.com/crunesmh/oblique/issues) or a [Pull Request](https://github.com/crunesmh/oblique/pulls)
 
 Contributing
 ---
 
 If you do make a contribution, please try to be sure to comment/document all of the changes and/or additions you made to the project.
-* If you want to join the [cleodevelopment](https://github.com/cleodevelopment) team, you can [send](mailto://jesper@cleo.rip) us an email with your experience and necessary information.
 
 Build
 ---
@@ -30,7 +29,7 @@ mvn clean install
 Usage
 ---
 #### Examples
-* See [ExamplePlugin](https://github.com/cleodevelopment/oblique/blob/master/src/main/java/rip/cleo/oblique/example/ExamplePlugin.java)
+* See [ExamplePlugin](https://github.com/crunesmh/oblique/blob/master/src/main/java/rip/cleo/oblique/example/ExamplePlugin.java)
 ```java
     @Override
     public void onEnable() {
@@ -69,7 +68,5 @@ public class ExampleMenu extends CommonMenu {
 ```
 Contact
 ---
-* Email - [jesper@cleo.rip](mailto://jesper@cleo.rip)
-* Discord - [cleo](https://discord.gg/Q7GFejJ)
 * Telegram - [crunesmh](https://t.me/crunesmh)
-* Keybase - [crune](https://keybase.io/crune)
+* Discord - jesper#6242

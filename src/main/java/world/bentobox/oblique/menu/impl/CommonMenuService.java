@@ -14,9 +14,6 @@ public final class CommonMenuService implements MenuService {
 
     private Map<UUID, Menu> referenceMap;
 
-    private CommonMenuService() {
-    }
-
     public CommonMenuService(Plugin plugin) {
         this.referenceMap = Maps.newHashMap();
 

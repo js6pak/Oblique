@@ -13,9 +13,6 @@ public final class MenuListener implements Listener {
 
     private MenuService menuService;
 
-    private MenuListener() {
-    }
-
     protected MenuListener(MenuService menuService) {
         this.menuService = menuService;
     }

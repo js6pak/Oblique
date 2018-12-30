@@ -13,12 +13,6 @@ public final class Oblique {
     private MenuService menuService;
 
     /**
-     * Empty constructor for security
-     */
-    private Oblique() {
-    }
-
-    /**
      * Sets the static {@link Oblique} instance and instantiates the {@link MenuService}
      *
      * @param plugin the {@link Plugin}

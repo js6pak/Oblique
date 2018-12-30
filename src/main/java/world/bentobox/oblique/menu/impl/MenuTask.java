@@ -16,9 +16,6 @@ public final class MenuTask implements Runnable {
     private MenuService menuService;
     private Plugin plugin;
 
-    private MenuTask() {
-    }
-
     protected MenuTask(MenuService menuService, Plugin plugin) {
         this.menuService = menuService;
         this.plugin = plugin;

@@ -13,6 +13,33 @@
     <url>https://github.com/BentoBoxWorld/Oblique</url>
     <inceptionYear>2018</inceptionYear>
 
+    <scm>
+        <connection>scm:git:https://github.com/BentoBoxWorld/Oblique.git</connection>
+        <developerConnection>scm:git:git@github.com:BentoBoxWorld/Oblique.git</developerConnection>
+        <url>https://github.com/BentoBoxWorld/Oblique</url>
+    </scm>
+
+    <ciManagement>
+        <system>jenkins</system>
+        <url>http://ci.codemc.org/job/BentoBoxWorld/job/Oblique</url>
+    </ciManagement>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/BentoBoxWorld/Oblique/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>codemc-snapshots</id>
+            <url>https://repo.codemc.org/repository/maven-snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>codemc-releases</id>
+            <url>https://repo.codemc.org/repository/maven-releases</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -38,6 +65,7 @@
     </dependencies>
 
     <build>
+        <defaultGoal>clean package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

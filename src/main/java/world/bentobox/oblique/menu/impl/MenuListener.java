@@ -1,4 +1,4 @@
-package rip.cleo.oblique.menu.impl;
+package world.bentobox.oblique.menu.impl;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -6,8 +6,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import rip.cleo.oblique.menu.Menu;
-import rip.cleo.oblique.menu.MenuService;
+import world.bentobox.oblique.menu.Menu;
+import world.bentobox.oblique.menu.MenuService;
 
 public final class MenuListener implements Listener {
 

@@ -1,4 +1,4 @@
-package rip.cleo.oblique.provider;
+package world.bentobox.oblique.provider;
 
 /**
  * Basic Provider interface easily implemented using lambdas

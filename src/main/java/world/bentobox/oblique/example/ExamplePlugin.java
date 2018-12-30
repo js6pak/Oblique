@@ -1,4 +1,4 @@
-package rip.cleo.oblique.example;
+package world.bentobox.oblique.example;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

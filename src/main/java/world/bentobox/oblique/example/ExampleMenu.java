@@ -1,4 +1,4 @@
-package rip.cleo.oblique.example;
+package world.bentobox.oblique.example;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
@@ -6,10 +6,10 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import rip.cleo.oblique.menu.MenuAction;
-import rip.cleo.oblique.menu.RowType;
-import rip.cleo.oblique.menu.impl.CommonMenu;
-import rip.cleo.oblique.provider.Provider;
+import world.bentobox.oblique.menu.MenuAction;
+import world.bentobox.oblique.menu.RowType;
+import world.bentobox.oblique.menu.impl.CommonMenu;
+import world.bentobox.oblique.provider.Provider;
 
 public class ExampleMenu extends CommonMenu {
 

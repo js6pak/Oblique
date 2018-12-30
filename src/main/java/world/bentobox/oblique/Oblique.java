@@ -1,8 +1,8 @@
-package rip.cleo.oblique;
+package world.bentobox.oblique;
 
 import org.bukkit.plugin.Plugin;
-import rip.cleo.oblique.menu.MenuService;
-import rip.cleo.oblique.menu.impl.CommonMenuService;
+import world.bentobox.oblique.menu.MenuService;
+import world.bentobox.oblique.menu.impl.CommonMenuService;
 
 /**
  * Oblique Menu API

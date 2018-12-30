@@ -1,4 +1,4 @@
-package rip.cleo.oblique.menu.impl;
+package world.bentobox.oblique.menu.impl;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Maps;
@@ -7,10 +7,10 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import rip.cleo.oblique.menu.Menu;
-import rip.cleo.oblique.menu.MenuAction;
-import rip.cleo.oblique.menu.RowType;
-import rip.cleo.oblique.provider.Provider;
+import world.bentobox.oblique.menu.Menu;
+import world.bentobox.oblique.menu.MenuAction;
+import world.bentobox.oblique.menu.RowType;
+import world.bentobox.oblique.provider.Provider;
 
 import java.util.Arrays;
 import java.util.Map;

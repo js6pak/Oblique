@@ -1,4 +1,4 @@
-package rip.cleo.oblique.menu.impl;
+package world.bentobox.oblique.menu.impl;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Table;
@@ -6,8 +6,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
-import rip.cleo.oblique.menu.MenuAction;
-import rip.cleo.oblique.menu.MenuService;
+import world.bentobox.oblique.menu.MenuAction;
+import world.bentobox.oblique.menu.MenuService;
 
 import java.util.function.Predicate;
 

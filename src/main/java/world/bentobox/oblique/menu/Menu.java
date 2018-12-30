@@ -1,9 +1,9 @@
-package rip.cleo.oblique.menu;
+package world.bentobox.oblique.menu;
 
 import com.google.common.collect.Table;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import rip.cleo.oblique.provider.Provider;
+import world.bentobox.oblique.provider.Provider;
 
 /**
  * Simple Menu interface

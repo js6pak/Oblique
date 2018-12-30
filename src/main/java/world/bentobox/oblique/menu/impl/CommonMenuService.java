@@ -1,11 +1,11 @@
-package rip.cleo.oblique.menu.impl;
+package world.bentobox.oblique.menu.impl;
 
 import com.google.common.collect.Maps;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.Plugin;
-import rip.cleo.oblique.menu.Menu;
-import rip.cleo.oblique.menu.MenuService;
+import world.bentobox.oblique.menu.Menu;
+import world.bentobox.oblique.menu.MenuService;
 
 import java.util.Map;
 import java.util.UUID;

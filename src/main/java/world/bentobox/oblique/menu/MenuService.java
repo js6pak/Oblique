@@ -1,4 +1,4 @@
-package rip.cleo.oblique.menu;
+package world.bentobox.oblique.menu;
 
 import org.bukkit.entity.Player;
 

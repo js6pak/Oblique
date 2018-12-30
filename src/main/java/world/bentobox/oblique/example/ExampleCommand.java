@@ -1,4 +1,4 @@
-package rip.cleo.oblique.example;
+package world.bentobox.oblique.example;
 
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.BaseComponent;
@@ -7,7 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import rip.cleo.oblique.Oblique;
+import world.bentobox.oblique.Oblique;
 
 import java.util.Arrays;
 

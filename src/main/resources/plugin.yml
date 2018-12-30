@@ -1,4 +1,4 @@
-main: rip.cleo.oblique.example.ExamplePlugin
+main: world.bentobox.oblique.example.ExamplePlugin
 name: "oblique"
 version: "${buildVersion}-${buildEnv}"
 author: "Cleo Development"

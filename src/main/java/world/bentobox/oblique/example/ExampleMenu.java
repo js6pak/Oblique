@@ -26,7 +26,7 @@ public class ExampleMenu extends CommonMenu {
             fill(toReturn, new ItemStack(Material.REDSTONE_BLOCK), RowType.AROUND);
 
             /* Put an gold_axe in the middle of the menu */
-            toReturn.put(13, new ItemStack(Material.GOLD_AXE), clickType -> {
+            toReturn.put(13, new ItemStack(Material.GOLDEN_AXE), clickType -> {
                 /* Send a message with a random chatcolor by the clickTypes enum-ordinal incremented by one */
                 player.sendMessage(ChatColor.values()[clickType.ordinal() + 1] + "You clicked: " + clickType);
                 player.closeInventory();

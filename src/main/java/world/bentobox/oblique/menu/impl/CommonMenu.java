@@ -16,10 +16,7 @@ import world.bentobox.oblique.menu.MenuAction;
 import world.bentobox.oblique.menu.RowType;
 import world.bentobox.oblique.provider.Provider;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.IntStream;
 
 @SuppressWarnings("WeakerAccess")
@@ -50,7 +47,7 @@ public abstract class CommonMenu implements Menu {
         return player -> HashBasedTable.create();
     }
 
-    protected ItemStack createItemStack(String name, Material material, int amount, ArrayList<String> lore, boolean glow) {
+    protected ItemStack createItemStack(String name, Material material, int amount, List<String> lore, boolean glow) {
         ItemStack i = new ItemStack(material, amount);
         ItemMeta iMeta = i.getItemMeta();
         iMeta.setDisplayName(name);

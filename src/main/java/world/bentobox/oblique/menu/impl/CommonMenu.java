@@ -4,14 +4,19 @@ import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Table;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import world.bentobox.oblique.menu.Menu;
 import world.bentobox.oblique.menu.MenuAction;
 import world.bentobox.oblique.menu.RowType;
 import world.bentobox.oblique.provider.Provider;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.UUID;
@@ -30,12 +35,12 @@ public abstract class CommonMenu implements Menu {
         this.rows = (byte) rows;
     }
 
-    public byte GetRows()
+    public byte getRows()
     {
         return rows;
     }
 
-    public int GetSize()
+    public int getSize()
     {
         return rows*9-1;
     }
@@ -43,6 +48,17 @@ public abstract class CommonMenu implements Menu {
     @Override
     public Provider<Player, Table<Integer, ItemStack, MenuAction>> itemProvider() {
         return player -> HashBasedTable.create();
+    }
+
+    protected ItemStack createItemStack(String name, Material material, int amount, ArrayList<String> lore, boolean glow) {
+        ItemStack i = new ItemStack(material, amount);
+        ItemMeta iMeta = i.getItemMeta();
+        iMeta.setDisplayName(name);
+        if (lore != null) iMeta.setLore(lore);
+        if (glow) iMeta.addEnchant(Enchantment.DURABILITY, 1, true);
+        iMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_DESTROYS, ItemFlag.HIDE_ENCHANTS, ItemFlag.HIDE_UNBREAKABLE, ItemFlag.HIDE_POTION_EFFECTS, ItemFlag.HIDE_PLACED_ON);
+        i.setItemMeta(iMeta);
+        return i;
     }
 
     protected void fill(Table<Integer, ItemStack, MenuAction> table, ItemStack itemStack, RowType... rowTypes) {

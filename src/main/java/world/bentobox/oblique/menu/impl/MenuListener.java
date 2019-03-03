@@ -9,6 +9,9 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import world.bentobox.oblique.menu.Menu;
 import world.bentobox.oblique.menu.MenuService;
 
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicReference;
+
 public final class MenuListener implements Listener {
 
     private MenuService menuService;
@@ -24,19 +27,19 @@ public final class MenuListener implements Listener {
 
         /* Check if the player currently has a menu referenced */
         if (menu != null) {
-            boolean[] shouldReturn = {false};
+            AtomicReference<Boolean> shouldReturn = new AtomicReference<>(true);
 
             /* Get the menus item-provider and look if the item clicked
              is in the table */
             menu.itemProvider().get(player).cellSet().forEach(cell -> {
-                if (cell.getRowKey().equals(event.getSlot())) {
+                if (Objects.equals(cell.getRowKey(), event.getSlot())) {
                     /* Set the boolean whether to cancel this event based on the
                      invocation of the menu-actions onclick method return value */
-                    shouldReturn[0] = cell.getValue().onClick(event.getClick());
+                    shouldReturn.set(Objects.requireNonNull(cell.getValue()).onClick(event.getClick()));
                 }
             });
 
-            event.setCancelled(shouldReturn[0]);
+            event.setCancelled(shouldReturn.get());
         }
     }
 

@@ -17,6 +17,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.stream.IntStream;
 
+@SuppressWarnings("WeakerAccess")
 public abstract class CommonMenu implements Menu {
 
     private Map<UUID, Inventory> referenceMap;
@@ -29,6 +30,16 @@ public abstract class CommonMenu implements Menu {
         this.rows = (byte) rows;
     }
 
+    public byte GetRows()
+    {
+        return rows;
+    }
+
+    public int GetSize()
+    {
+        return rows*9-1;
+    }
+
     @Override
     public Provider<Player, Table<Integer, ItemStack, MenuAction>> itemProvider() {
         return player -> HashBasedTable.create();
@@ -39,15 +50,11 @@ public abstract class CommonMenu implements Menu {
             /* Im not good w/ maths so.. this is ugly */
             switch (rowType) {
                 case TOP: {
-                    IntStream.range(0, 9).forEach(i -> {
-                        table.put(i, itemStack, clickType -> true);
-                    });
+                    IntStream.range(0, 9).forEach(i -> table.put(i, itemStack, clickType -> true));
                 }
 
                 case BOTTOM: {
-                    IntStream.range(rows * 9 - 9, rows * 9).forEach(i -> {
-                        table.put(i, itemStack, clickType -> true);
-                    });
+                    IntStream.range(rows * 9 - 9, rows * 9).forEach(i -> table.put(i, itemStack, clickType -> true));
                     break;
                 }
 
@@ -66,12 +73,8 @@ public abstract class CommonMenu implements Menu {
                 }
 
                 case AROUND: {
-                    IntStream.range(0, 9).forEach(i -> {
-                        table.put(i, itemStack, clickType -> true);
-                    });
-                    IntStream.range(rows * 9 - 9, rows * 9).forEach(i -> {
-                        table.put(i, itemStack, clickType -> true);
-                    });
+                    IntStream.range(0, 9).forEach(i -> table.put(i, itemStack, clickType -> true));
+                    IntStream.range(rows * 9 - 9, rows * 9).forEach(i -> table.put(i, itemStack, clickType -> true));
                     for (int i = 8; i < rows * 9; i += 9) {
                         table.put(i, itemStack, clickType -> true);
                     }
